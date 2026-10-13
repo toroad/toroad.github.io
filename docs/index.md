@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Jack Zhang 的技术笔记
+  name: jack.zhang的技术探索
   text: Agent 架构 · AI 基础设施 · 生产级系统设计
   tagline: 原理深拆型技术写作，持续更新
   actions:

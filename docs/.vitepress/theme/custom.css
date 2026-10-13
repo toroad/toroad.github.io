@@ -54,20 +54,6 @@
   padding-bottom: 56px;
 }
 
-/* ============ 首页四领域卡片图标 ============ */
-.VPFeature .icon img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  box-shadow: 0 4px 16px rgba(88, 80, 236, 0.25);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.VPFeature .box:hover .icon img {
-  transform: scale(1.06);
-  box-shadow: 0 6px 20px rgba(88, 80, 236, 0.35);
-}
-
 /* ============ 首页正文区块标题 ============ */
 .vp-doc h2 {
   margin-top: 3rem;

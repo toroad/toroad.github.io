@@ -1,6 +1,6 @@
 <template>
   <div class="hero-clip">
-    <img src="/media/hero.jpg" alt="Deep Systems：网络、安全、Agent 与软件架构的分层系统图景" width="320" height="320" />
+    <img src="/media/hammer-poster.jpg" alt="把复杂系统，一锤一锤拆开" width="320" height="320" />
     <p class="hero-clip-caption">把复杂系统，一锤一锤拆开。</p>
   </div>
 </template>

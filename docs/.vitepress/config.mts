@@ -86,10 +86,12 @@ export default withMermaid(
     },
 
     head: [
+      ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
       ['meta', { name: 'author', content: 'jack zhang' }],
       ['meta', { property: 'og:type', content: 'website' }],
       ['meta', { property: 'og:title', content: 'Deep Systems' }],
-      ['meta', { property: 'og:description', content: '网络、安全、Agent 与软件架构的深度技术笔记' }]
+      ['meta', { property: 'og:description', content: '网络、安全、Agent 与软件架构的深度技术笔记' }],
+      ['meta', { property: 'og:image', content: SITE_URL + '/media/hero.jpg' }]
     ],
 
     themeConfig: {

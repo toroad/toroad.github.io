@@ -14,13 +14,25 @@ hero:
       link: /series/
 
 features:
-  - title: 网络
+  - icon:
+      src: /media/icon-network.png
+      alt: 网络
+    title: 网络
     details: 协议栈、网关与流量工程的原理拆解，从数据包到架构决策
-  - title: 安全
+  - icon:
+      src: /media/icon-security.png
+      alt: 安全
+    title: 安全
     details: 威胁建模、零信任与攻防视角，OWASP / MITRE ATLAS / MAESTRO 的工程化落地
-  - title: Agent
+  - icon:
+      src: /media/icon-agent.png
+      alt: Agent
+    title: Agent
     details: Agent 平台架构、Runtime、持久执行与生产级治理的全栈剖析
-  - title: 软件架构
+  - icon:
+      src: /media/icon-arch.png
+      alt: 软件架构
+    title: 软件架构
     details: 高并发、高可用、弹性资源与复杂系统的设计权衡
 ---
 

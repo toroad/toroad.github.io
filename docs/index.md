@@ -59,6 +59,13 @@ features:
 - **生产视角**：每个论断都回答"故障时会发生什么"，而非只描述正常路径
 - **持续修订**：文章随认知与事实更新，每篇页脚显示真实的最后更新时间
 
+<div class="hammer-clip">
+  <video autoplay muted loop playsinline preload="metadata" poster="/media/hammer-poster.jpg" width="260">
+    <source src="/media/hammer.mp4" type="video/mp4" />
+  </video>
+  <p class="hammer-caption">把复杂系统，一锤一锤拆开。</p>
+</div>
+
 ## 关于作者
 
 **jack zhang** — 关注网络、安全、Agent 与软件架构的系统工程师。相信深度内容的价值随时间复利增长。

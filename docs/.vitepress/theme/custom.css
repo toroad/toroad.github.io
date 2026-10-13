@@ -1,0 +1,19 @@
+/* 首页自定义样式 */
+.hammer-clip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5rem auto 0.5rem;
+}
+
+.hammer-clip video {
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  max-width: 100%;
+}
+
+.hammer-caption {
+  margin-top: 0.75rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.95rem;
+}

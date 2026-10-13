@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import GiscusComments from './GiscusComments.vue'
 import { h } from 'vue'
+import './custom.css'
 
 export default {
   extends: DefaultTheme,

@@ -9,7 +9,6 @@ description: "Agent、Harness、Agent Runtime、业务闭环、零信任、OWASP
 > **系列**：生产级 Agent 平台架构 2026 · 第 0 篇（总纲）  
 > **定位**：公开技术参考文章 · 全系列入口  
 > **版本**：总纲重构版  
-> **更新时间**：2026-10-12  
 > **关键词**：Agent、Harness、Agent Runtime、业务闭环、零信任、OWASP、MITRE ATLAS、MAESTRO、安全执行环境、弹性与可靠性
 
 ## 摘要

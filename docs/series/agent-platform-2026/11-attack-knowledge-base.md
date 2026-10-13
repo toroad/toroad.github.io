@@ -9,7 +9,6 @@ description: "MITRE ATLAS、CSA MAESTRO、OWASP Agentic Top 10、威胁建模、
 > **系列**：生产级 Agent 平台架构 2026 · 第 11 篇  
 > **定位**：安全治理篇  
 > **版本**：闭环修订版  
-> **更新时间**：2026-10-12  
 > **前置阅读**：第 9 篇《为什么 Agent 安全不同：资产、主体与信任边界》 · 第 10 篇《OWASP Agentic Top 10 2026 架构化解读》  
 > **关键词**：MITRE ATLAS、CSA MAESTRO、OWASP Agentic Top 10、威胁建模、攻击知识库、控制验证、安全选型
 

@@ -9,7 +9,6 @@ description: "记忆治理、RAG、Artifact、ResultSelection、Usage、Settleme
 > **系列**：生产级 Agent 平台架构 2026 · 第 14 篇  
 > **定位**：数据篇  
 > **版本**：闭环修订版  
-> **更新时间**：2026-10-12  
 > **前置阅读**：第 0 篇《从模型推理到生产运行：2026 年 Agent、Harness 与 Runtime 总体架构》 · 第 2 篇《从 Task 到交付：Agent 业务闭环与领域对象设计》 · 第 3 篇《生产级 Agent 平台总体架构：从主链到功能域》  
 > **关键词**：记忆治理、RAG、Artifact、ResultSelection、Usage、Settlement、FinOps
 

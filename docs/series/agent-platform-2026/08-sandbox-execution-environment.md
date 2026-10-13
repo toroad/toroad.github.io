@@ -9,7 +9,6 @@ description: "安全执行环境、沙箱、gVisor、Firecracker、Kata、出向
 > **系列**：生产级 Agent 平台架构 2026 · 第 8 篇  
 > **定位**：Runtime 机制篇  
 > **版本**：闭环修订版  
-> **更新时间**：2026-10-12  
 > **前置阅读**：第 0 篇《从模型推理到生产运行：2026 年 Agent、Harness 与 Runtime 总体架构》 · 第 2 篇《从 Task 到交付：Agent 业务闭环与领域对象设计》 · 第 4 篇《Agent Runtime：从生命周期到执行治理的完整能力模型》  
 > **关键词**：安全执行环境、沙箱、gVisor、Firecracker、Kata、出向控制、镜像供应链
 

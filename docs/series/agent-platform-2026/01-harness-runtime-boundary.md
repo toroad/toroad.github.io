@@ -9,7 +9,6 @@ description: "Agent、Harness、Agent Runtime、Runner、Execution Runtime、模
 > **系列**：生产级 Agent 平台架构 2026 · 第 1 篇  
 > **定位**：架构基础篇  
 > **版本**：闭环修订版  
-> **更新时间**：2026-10-12  
 > **前置阅读**：第 0 篇《从模型推理到生产运行：2026 年 Agent、Harness 与 Runtime 总体架构》  
 > **关键词**：Agent、Harness、Agent Runtime、Runner、Execution Runtime、模型服务、Sandbox
 

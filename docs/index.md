@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: jack.zhang的技术探索
-  text: Agent 架构 · AI 基础设施 · 生产级系统设计
-  tagline: 原理深拆型技术写作，持续更新
+  name: Deep Systems
+  text: 网络 · 安全 · Agent · 软件架构
+  tagline: 网络、安全、Agent 与软件架构的深度技术笔记，持续更新
   actions:
     - theme: brand
       text: 阅读当前系列

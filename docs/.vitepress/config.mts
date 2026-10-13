@@ -15,8 +15,8 @@ export default withMermaid(
   defineConfig({
     base: BASE,
     lang: 'zh-CN',
-    title: "jack.zhang的技术探索",
-    description: 'Agent 架构、AI 基础设施与生产级系统设计的深度技术文章',
+    title: "Deep Systems",
+    description: '网络、安全、Agent 与软件架构的深度技术笔记',
 
     cleanUrls: true,
     lastUpdated: true,
@@ -28,8 +28,8 @@ export default withMermaid(
     head: [
       ['meta', { name: 'author', content: 'jack zhang' }],
       ['meta', { property: 'og:type', content: 'website' }],
-      ['meta', { property: 'og:title', content: 'jack.zhang的技术探索' }],
-      ['meta', { property: 'og:description', content: 'Agent 架构、AI 基础设施与生产级系统设计的深度技术文章' }]
+      ['meta', { property: 'og:title', content: 'Deep Systems' }],
+      ['meta', { property: 'og:description', content: '网络、安全、Agent 与软件架构的深度技术笔记' }]
     ],
 
     themeConfig: {

@@ -44,6 +44,7 @@ export default withMermaid(
         { text: '首页', link: '/' },
         { text: '系列专题', link: '/series/' },
         { text: '随笔文章', link: '/essays/' },
+        { text: '专题方向', link: '/#专题方向' },
         {
           text: '当前系列',
           items: [

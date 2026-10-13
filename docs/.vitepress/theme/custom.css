@@ -1,19 +1,61 @@
-/* 首页自定义样式 */
-.hammer-clip {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2.5rem auto 0.5rem;
+/* ============ 首页 Hero 字体层级 ============ */
+/* name（Deep Systems）：最大、渐变、重字重 */
+.VPHero .name,
+.VPHero .name .clip {
+  font-size: 64px !important;
+  line-height: 1.15 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
 }
 
-.hammer-clip video {
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  max-width: 100%;
+/* text（把系统讲透）：中档字号，品牌色，与 name 拉开层级 */
+.VPHero .text {
+  display: block;
+  margin-top: 10px;
+  font-size: 26px !important;
+  line-height: 1.4 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em;
+  color: var(--vp-c-brand-1) !important;
 }
 
-.hammer-caption {
-  margin-top: 0.75rem;
-  color: var(--vp-c-text-2);
-  font-size: 0.95rem;
+/* tagline（领域 + 理念）：最小、弱化、宽行距，作为说明文字 */
+.VPHero .tagline {
+  margin-top: 18px !important;
+  padding-top: 18px;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 16px !important;
+  line-height: 1.9 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.03em;
+  color: var(--vp-c-text-2) !important;
+  max-width: 520px;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .VPHero .name,
+  .VPHero .name .clip {
+    font-size: 44px !important;
+  }
+  .VPHero .text {
+    font-size: 20px !important;
+    letter-spacing: 0.1em;
+  }
+  .VPHero .tagline {
+    font-size: 15px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* hero 与下方内容之间的呼吸感 */
+.VPHero {
+  padding-bottom: 56px;
+}
+
+/* ============ 首页正文区块标题 ============ */
+.vp-doc h2 {
+  margin-top: 3rem;
+  letter-spacing: -0.01em;
 }

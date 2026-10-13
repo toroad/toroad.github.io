@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "offline": "node scripts/offline.mjs",
+    "online": "node scripts/online.mjs"
   },
   "devDependencies": {
     "vitepress": "^1.6.3",

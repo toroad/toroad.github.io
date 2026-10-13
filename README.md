@@ -58,6 +58,25 @@ git push -u origin main
 - **新系列**：在 `docs/series/` 下新建子目录（如 `docs/series/<series-slug>/`），在 `docs/series/index.md` 表格追加一行，并在 `config.mts` 的 sidebar 中按现有格式注册新的路径组。
 - **更新已有文章**：直接改对应 md 文件 push 即可，约 2 分钟自动上线，"最后更新"时间自动刷新。
 
+## 暂存与下线（draft）
+
+- **新稿暂存**：把写作中的 md 放进 `docs/drafts/` 目录即可——该目录整体不参与构建、不会上线，但文件正常纳入 git 管理（可推送备份）。模板见 `docs/drafts/wip-example.md`。
+- **下线一篇已发布文章**：
+
+  ```bash
+  npm run offline -- docs/series/agent-platform-2026/07-execution-runtime-backends.md
+  ```
+
+  脚本会在该文 front matter 写入 `draft: true`。构建时配置自动扫描所有 `draft: true` 的文件，通过 `srcExclude` 排除出产物，同时自动侧边栏也会跳过该篇。push 后线上约 2 分钟下线。
+
+- **恢复上线**：
+
+  ```bash
+  npm run online -- docs/series/agent-platform-2026/07-execution-runtime-backends.md
+  ```
+
+- **下线整个专题**：对专题目录下每篇执行一次 `offline`（或把整目录移入 `docs/drafts/`）即可；`docs/series/index.md` 与首页导览表中的入口链接建议同步注释掉。
+
 ## 可选配置
 
 - **评论区（Giscus）**：见 `docs/.vitepress/theme/GiscusComments.vue` 内注释，约 5 分钟。
@@ -73,7 +92,11 @@ docs/
 │   ├── index.md                # 系列总览
 │   └── agent-platform-2026/    # 本系列 20 篇（mermaid 直接渲染）
 ├── essays/                     # 单篇随笔（未来创作）
+├── drafts/                     # 暂存草稿（不参与构建、不上线）
 └── .vitepress/                 # 站点配置
+scripts/
+├── offline.mjs                 # 下线文章（写入 draft: true）
+└── online.mjs                  # 恢复上线（移除 draft 标记）
 ```
 
 协议：内容版权归作者所有；站点代码 MIT。

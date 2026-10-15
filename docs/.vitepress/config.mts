@@ -108,7 +108,8 @@ export default withMermaid(
         {
           text: '当前系列',
           items: [
-            { text: '生产级 Agent 平台架构 2026', link: '/series/agent-platform-2026/00-overview' }
+            { text: '生产级 Agent 平台架构 2026', link: '/series/agent-platform-2026/00-overview' },
+            { text: '云基础设施 → Agent 执行层：能力迁移', link: '/series/agent-execution-migration/00-overview' }
           ]
         }
       ],
@@ -120,6 +121,13 @@ export default withMermaid(
             text: '生产级 Agent 平台架构 2026',
             collapsed: false,
             items: seriesItems('series/agent-platform-2026')
+          }
+        ],
+        '/series/agent-execution-migration/': [
+          {
+            text: '云基础设施 → Agent 执行层：能力迁移',
+            collapsed: false,
+            items: seriesItems('series/agent-execution-migration')
           }
         ],
         '/essays/': [

@@ -131,8 +131,12 @@ flowchart TD
 
 2026 年 Agent 执行层的竞争，不在于谁先把四域各自做出来，而在于**谁先让四域互相引用、联合优化**。云基础设施用了十年把这套协同打磨成熟；Agent 平台的窗口期，比当年短得多——这正是"做过云基础设施的人"在这个时间点最值钱的原因。
 
+## 7. 下一篇
+
+沙箱管住了"里面的混乱"；但 Agent 与工具、记忆、子 Agent 之间的每一次交互，还需要在流量层被验证——微隔离与 Service Mesh 的能力迁移，见 [05 微隔离 → Agent 东西向治理](./05-microisolation-east-west)。
+
 ---
 
-*系列：[总纲](./00-overview) | [01 K8s 资源模型](./01-k8s-resource-model) | [02 FaaS 冷启动](./02-faas-cold-start) | [03 状态外置](./03-state-externalization) | [04 多租户隔离](./04-multi-tenant-isolation)*
+*系列：[总纲](./00-overview) | [01 K8s 资源模型](./01-k8s-resource-model) | [02 FaaS 冷启动](./02-faas-cold-start) | [03 状态外置](./03-state-externalization) | [04 多租户隔离](./04-multi-tenant-isolation) | [05 东西向治理](./05-microisolation-east-west)*
 
 *姊妹系列：[生产级 Agent 平台架构 2026](/series/agent-platform-2026/00-overview)*

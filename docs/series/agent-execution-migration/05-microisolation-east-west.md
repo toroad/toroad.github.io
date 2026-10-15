@@ -155,8 +155,12 @@ flowchart TD
 
 云基础设施用十年把这五域打磨成熟；Agent 平台的窗口期短得多——因为五域的坑不需要重新发现，只需要重新开挖。这正是能力迁移方法论的意义所在。
 
+## 8. 下一篇
+
+五域共享的"任务级身份"锚点，值得单独一篇深拆——它自己的构造（mTLS 通道身份 + OAuth 2.1 行为授权 + 委托链）是零信任能力迁移的完整一域。见 [06 零信任 → Agent 身份治理与鉴权](./06-zero-trust-agent-identity)。
+
 ---
 
-*系列：[总纲](./00-overview) | [01 K8s 资源模型](./01-k8s-resource-model) | [02 FaaS 冷启动](./02-faas-cold-start) | [03 状态外置](./03-state-externalization) | [04 多租户隔离](./04-multi-tenant-isolation) | [05 东西向治理](./05-microisolation-east-west)*
+*系列：[总纲](./00-overview) | [01 K8s 资源模型](./01-k8s-resource-model) | [02 FaaS 冷启动](./02-faas-cold-start) | [03 状态外置](./03-state-externalization) | [04 多租户隔离](./04-multi-tenant-isolation) | [05 东西向治理](./05-microisolation-east-west) | [06 身份治理与鉴权](./06-zero-trust-agent-identity)*
 
 *姊妹系列：[生产级 Agent 平台架构 2026](/series/agent-platform-2026/00-overview)*

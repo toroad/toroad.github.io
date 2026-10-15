@@ -137,6 +137,6 @@ flowchart TD
 
 ---
 
-*系列：[总纲](./00-overview) | [01 K8s 资源模型](./01-k8s-resource-model) | [02 FaaS 冷启动](./02-faas-cold-start) | [03 状态外置](./03-state-externalization) | [04 多租户隔离](./04-multi-tenant-isolation) | [05 东西向治理](./05-microisolation-east-west)*
+*系列：[总纲](./00-overview) | [01 K8s 资源模型](./01-k8s-resource-model) | [02 FaaS 冷启动](./02-faas-cold-start) | [03 状态外置](./03-state-externalization) | [04 多租户隔离](./04-multi-tenant-isolation) | [05 东西向治理](./05-microisolation-east-west) | [06 身份治理与鉴权](./06-zero-trust-agent-identity)*
 
 *姊妹系列：[生产级 Agent 平台架构 2026](/series/agent-platform-2026/00-overview)*

@@ -14,7 +14,7 @@ description: "能力迁移、Agent 执行层、K8s 资源模型、FaaS 冷启动
 
 ## 摘要
 
-本系列提出一个能力迁移框架：Agent 执行层不是全新领域，而是云基础设施能力在新负载形态下的重演。K8s 资源模型、FaaS 冷启动、Serverless 状态外置、多租户隔离四域的旧答案，构成 Agent 平台"坑的地图"。差异集中在三处新变量：负载形态（长脉冲会话）、确定性（LLM 输出不可重放）、威胁模型（prompt 注入使多租户从防过失升级为防主动攻击）。本文给出四域映射总表与平台成熟度分级，后续四篇逐一深拆。
+本系列提出一个能力迁移框架：Agent 执行层不是全新领域，而是云基础设施能力在新负载形态下的重演。K8s 资源模型、FaaS 冷启动、Serverless 状态外置、多租户隔离、微隔离与零信任五域的旧答案，构成 Agent 平台"坑的地图"。差异集中在三处新变量：负载形态（长脉冲会话）、确定性（LLM 输出不可重放）、威胁模型（prompt 注入使多租户从防过失升级为防主动攻击）。本文给出能力迁移总表与平台成熟度分级，后续各篇逐一深拆。
 
 ## 1. 方法论：坑的形状
 
@@ -33,6 +33,7 @@ description: "能力迁移、Agent 执行层、K8s 资源模型、FaaS 冷启动
 | [03](./03-state-externalization) | Serverless 状态外置 | 状态与计算分离、事件溯源、乐观锁 | Agent 三层状态与 Checkpoint | LLM 不可重放性 → 审计降级为追溯 |
 | [04](./04-multi-tenant-isolation) | 多租户隔离 | namespace/cgroups → gVisor → MicroVM | 沙箱选型与隔离边界设计 | 威胁模型升级 + 任务级隔离粒度 |
 | [05](./05-microisolation-east-west) | 微隔离 / Service Mesh | Envoy、ExtAuthz、eBPF、身份锚点 | Agent 东西向流量治理（MCP 调用授权与审计） | 任务级身份锚点 + 密度模型冲突 |
+| [06](./06-zero-trust-agent-identity) | 零信任身份 | mTLS、SPIFFE、OAuth 2.1、Token Exchange | Agent 身份治理与鉴权全案 | 三重身份 + 委托链 + 不可信客户端 |
 
 每篇的固定结构：**当年坑的形状 → 当年怎么解的 → Agent 时代坑的新形态 → 旧答案迁移时改什么 → 迁移清单**。迁移清单可直接作为设计评审 checklist。
 
@@ -70,3 +71,4 @@ description: "能力迁移、Agent 执行层、K8s 资源模型、FaaS 冷启动
 - [03 Serverless 状态外置 → Agent Checkpoint](./03-state-externalization)
 - [04 多租户隔离 → Agent 沙箱选型与边界](./04-multi-tenant-isolation)
 - [05 微隔离 → Agent 东西向治理：Envoy、eBPF 与任务级身份](./05-microisolation-east-west)
+- [06 零信任 → Agent 身份治理与鉴权：mTLS 与 OAuth 2.1 全案](./06-zero-trust-agent-identity)

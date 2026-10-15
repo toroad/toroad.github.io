@@ -41,9 +41,9 @@ features:
 
 ## 新系列：云基础设施 → Agent 执行层：能力迁移
 
-一个 **6 篇**（连载中）的深度系列，回答一个问题：**Agent 执行层的坑，云基础设施是不是十年前就踩过一遍？**
+一个 **7 篇**（连载中）的深度系列，回答一个问题：**Agent 执行层的坑，云基础设施是不是十年前就踩过一遍？**
 
-核心论点：*K8s 资源模型、FaaS 冷启动、Serverless 状态外置、多租户隔离、微隔离五域的旧答案，构成 Agent 平台"坑的地图"——负载形态、LLM 不可重放性、prompt 注入威胁模型是仅有的三个新变量。*
+核心论点：*K8s 资源模型、FaaS 冷启动、Serverless 状态外置、多租户隔离、微隔离与零信任五域的旧答案，构成 Agent 平台"坑的地图"——负载形态、LLM 不可重放性、prompt 注入威胁模型是仅有的三个新变量。*
 
 | 篇目 | 迁移映射 | 核心设计 |
 |---|---|---|
@@ -52,6 +52,7 @@ features:
 | [03](series/agent-execution-migration/03-state-externalization) | 状态外置 → Checkpoint | 三层状态、逻辑断点 vs 物理快照、审计降级为追溯 |
 | [04](series/agent-execution-migration/04-multi-tenant-isolation) | 多租户隔离 → 沙箱边界 | 威胁模型升级、任务级隔离、凭据作用域铁律 |
 | [05](series/agent-execution-migration/05-microisolation-east-west) | 微隔离 → 东西向治理 | 任务级身份、ExtAuthz 动态授权、eBPF 底座 + Envoy 手术刀 |
+| [06](series/agent-execution-migration/06-zero-trust-agent-identity) | 零信任 → 身份治理与鉴权 | 四层身份模型、mTLS + OAuth 2.1 分工、Token Exchange 委托链 |
 
 从 [总纲：能力迁移地图](series/agent-execution-migration/00-overview) 开始读。
 
@@ -61,7 +62,7 @@ features:
 
 | 方向 | 已发布 | 筹备中 |
 |---|---|---|
-| **Agent** | [生产级 Agent 平台架构 2026](series/agent-platform-2026/00-overview)（20 篇） · [能力迁移系列](series/agent-execution-migration/00-overview)（6 篇连载中） | Agent 可观测与评测体系 · MCP/A2A 协议生态深拆 |
+| **Agent** | [生产级 Agent 平台架构 2026](series/agent-platform-2026/00-overview)（20 篇） · [能力迁移系列](series/agent-execution-migration/00-overview)（7 篇连载中） | Agent 可观测与评测体系 · MCP/A2A 协议生态深拆 |
 | **安全** | — | 零信任架构落地 · 软件供应链安全 · 攻防视角的系统设计 |
 | **网络** | — | API 网关架构演进 · HTTP/3 与 QUIC 工程实践 · 零信任网络 |
 | **软件架构** | — | 高并发系统设计 · 事件驱动与持久执行 · 平台工程 |

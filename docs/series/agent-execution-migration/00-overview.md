@@ -35,6 +35,7 @@ description: "能力迁移、Agent 执行层、K8s 资源模型、FaaS 冷启动
 | [05](./05-microisolation-east-west) | 微隔离 / Service Mesh | Envoy、ExtAuthz、eBPF、身份锚点 | Agent 东西向流量治理（MCP 调用授权与审计） | 任务级身份锚点 + 密度模型冲突 |
 | [06](./06-zero-trust-agent-identity) | 零信任身份 | mTLS、SPIFFE、OAuth 2.1、Token Exchange | Agent 身份治理与鉴权全案 | 三重身份 + 委托链 + 不可信客户端 |
 | [07](./07-streaming-task-orchestration) | 高并发流式平台 | 分区亲和、背压、水位线、幂等、CAS | Agent 任务编排与事件驱动 | 瓶颈从算力变为配额，延迟哲学反转 |
+| [08](./08-ha-resilience) | 高可用 / 韧性工程 | 故障域、降级链、多活、混沌工程 | Agent 会话级韧性与 LLM 依赖治理 | 威胁源移到平台边界之外，降级产品化 |
 
 每篇的固定结构：**当年坑的形状 → 当年怎么解的 → Agent 时代坑的新形态 → 旧答案迁移时改什么 → 迁移清单**。迁移清单可直接作为设计评审 checklist。
 
@@ -61,7 +62,7 @@ description: "能力迁移、Agent 执行层、K8s 资源模型、FaaS 冷启动
 
 ## 5. 阅读顺序与受众
 
-- **平台建设者**：按 01 → 05 顺序读，每篇末尾的迁移清单可直接作为设计评审 checklist；
+- **平台建设者**：按 01 → 08 顺序读，每篇末尾的迁移清单可直接作为设计评审 checklist；
 - **架构评估者**：先读 04 的选型决策树（多数平台在沙箱这一关就不及格），再回看 02、03、05；
 - **从应用层转 Infra 的工程师**：先补 01 的 K8s 资源模型基础，这是全系列的地基。
 
@@ -74,3 +75,4 @@ description: "能力迁移、Agent 执行层、K8s 资源模型、FaaS 冷启动
 - [05 微隔离 → Agent 东西向治理：Envoy、eBPF 与任务级身份](./05-microisolation-east-west)
 - [06 零信任 → Agent 身份治理与鉴权：mTLS 与 OAuth 2.1 全案](./06-zero-trust-agent-identity)
 - [07 高并发流式平台 → Agent 任务编排：三层分离与事件驱动](./07-streaming-task-orchestration)
+- [08 高可用平台 → Agent 韧性：故障域、降级链与多活](./08-ha-resilience)

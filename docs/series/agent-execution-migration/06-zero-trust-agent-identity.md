@@ -149,8 +149,12 @@ flowchart LR
 
 本系列六域至此在身份处汇合：调度（01）以任务身份做亲和，供给（02）以绑定记录锚定预热实例，状态（03）以身份仲裁并发写，隔离（04）以任务身份切凭据作用域，流量（05）以任务身份做 ExtAuthz 决策，而本篇给出这个锚点本身的完整构造。零信任十年沉淀的资产——mTLS 的通道身份与 OAuth 2.1 的行为授权——在 Agent 执行层不是被替换，而是被**细化一层**：从服务到任务。迁移的全部工作量，就在"细化"二字。
 
+## 8. 下一篇
+
+身份锚点落定后，回到平台最原始的能力命题：高并发。流式平台的分区、背压、水位线、幂等与三层分离，如何迁移为 Agent 任务编排的内功——见 [07 高并发流式平台 → Agent 任务编排](./07-streaming-task-orchestration)。
+
 ---
 
-*系列：[总纲](./00-overview) | [01 K8s 资源模型](./01-k8s-resource-model) | [02 FaaS 冷启动](./02-faas-cold-start) | [03 状态外置](./03-state-externalization) | [04 多租户隔离](./04-multi-tenant-isolation) | [05 东西向治理](./05-microisolation-east-west) | [06 身份治理与鉴权](./06-zero-trust-agent-identity)*
+*系列：[总纲](./00-overview) | [01 K8s 资源模型](./01-k8s-resource-model) | [02 FaaS 冷启动](./02-faas-cold-start) | [03 状态外置](./03-state-externalization) | [04 多租户隔离](./04-multi-tenant-isolation) | [05 东西向治理](./05-microisolation-east-west) | [06 身份治理与鉴权](./06-zero-trust-agent-identity) | [07 任务编排](./07-streaming-task-orchestration)*
 
 *姊妹系列：[生产级 Agent 平台架构 2026](/series/agent-platform-2026/00-overview)*

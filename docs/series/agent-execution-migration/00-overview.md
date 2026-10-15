@@ -34,6 +34,7 @@ description: "能力迁移、Agent 执行层、K8s 资源模型、FaaS 冷启动
 | [04](./04-multi-tenant-isolation) | 多租户隔离 | namespace/cgroups → gVisor → MicroVM | 沙箱选型与隔离边界设计 | 威胁模型升级 + 任务级隔离粒度 |
 | [05](./05-microisolation-east-west) | 微隔离 / Service Mesh | Envoy、ExtAuthz、eBPF、身份锚点 | Agent 东西向流量治理（MCP 调用授权与审计） | 任务级身份锚点 + 密度模型冲突 |
 | [06](./06-zero-trust-agent-identity) | 零信任身份 | mTLS、SPIFFE、OAuth 2.1、Token Exchange | Agent 身份治理与鉴权全案 | 三重身份 + 委托链 + 不可信客户端 |
+| [07](./07-streaming-task-orchestration) | 高并发流式平台 | 分区亲和、背压、水位线、幂等、CAS | Agent 任务编排与事件驱动 | 瓶颈从算力变为配额，延迟哲学反转 |
 
 每篇的固定结构：**当年坑的形状 → 当年怎么解的 → Agent 时代坑的新形态 → 旧答案迁移时改什么 → 迁移清单**。迁移清单可直接作为设计评审 checklist。
 
@@ -72,3 +73,4 @@ description: "能力迁移、Agent 执行层、K8s 资源模型、FaaS 冷启动
 - [04 多租户隔离 → Agent 沙箱选型与边界](./04-multi-tenant-isolation)
 - [05 微隔离 → Agent 东西向治理：Envoy、eBPF 与任务级身份](./05-microisolation-east-west)
 - [06 零信任 → Agent 身份治理与鉴权：mTLS 与 OAuth 2.1 全案](./06-zero-trust-agent-identity)
+- [07 高并发流式平台 → Agent 任务编排：三层分离与事件驱动](./07-streaming-task-orchestration)
